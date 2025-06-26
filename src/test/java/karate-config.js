@@ -11,7 +11,7 @@ function fn() {
     }
 
     var config = {
-        baseUrl: protocol + '://' + serve,
+        baseUrl: protocol + '://' + server,
     };
     config.faker = Java.type('com.github.javafaker.Faker');
 
