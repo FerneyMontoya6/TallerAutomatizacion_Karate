@@ -13,13 +13,16 @@ Feature: Login to app contact
     And match response ==
     """
     {
-    "user": {
+      "user": {
         "_id": '#string',
         "firstName": '#string',
         "lastName": '#string',
         "email": '#string',
         "__v": '#number'
-    },
-    "token": '#string',
+      },
+      "token": '#string'
     }
     """
+    # Validación token
+    * def token = response.token
+    * match token contains '.'
