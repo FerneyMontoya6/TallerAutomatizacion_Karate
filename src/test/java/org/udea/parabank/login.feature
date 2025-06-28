@@ -18,7 +18,7 @@ Feature: Login to app contact
         "firstName": '#string',
         "lastName": '#string',
         "email": '#string',
-        "__v": '#number',
+        "__v": '#number'
     },
     "token": '#string',
     }
